@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="responsive.css">
     <style>
     	body {
             font-family: 'Poppins', sans-serif;
             scroll-behavior: smooth;
+        }
+        .overflow-x-hidden {
+        	overflow-x: hidden !important;
         }
         .navbar {
             background-color: #333;
@@ -40,6 +46,34 @@
 		    border-radius: 9px;
 		    background-color: #ffbd4a;
         }
+        .text-warning {
+        	color: #ffbd4a !important;
+        }
+        .font-weight-bold {
+        	font-weight: bold;
+        }
+        .py-6{
+        	padding: 6rem 0;
+        }
+        .py-8{
+        	padding: 8rem 0;
+        }
+        .br-12 {
+        	border-radius: 12px;
+        }
+        .border-none {
+        	border: none !important;
+        }
+        .b-r-10{
+        	border-top-right-radius: 10px;
+        	border-bottom-right-radius: 10px;
+        }
+        .font-inr {
+        	font-size: 5rem;
+        }
+        .font-15 {
+        	font-size: 15px;
+        }
         footer {
         	background-color: #14563e;
         	padding: 20px 0;
@@ -47,6 +81,56 @@
         footer img {
         	width: 220px;
         }
+        .accordion-button, .accordion-body {
+        	font-size: 20px;
+        }
+        .card {
+		    border: 1px solid #ced4da;
+		}
+		.accordion-item {
+			border: none;
+		}
+		.accordion-button:not(.collapsed) {
+			color: #14563e !important;
+			background-color: #fff;
+			box-shadow: none !important;
+		}
+		.accordion-button:focus {
+			border-color: #fff;
+		}
+        .accordion-button::after {
+		  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+		  transition: all 0.5s;
+		}
+		.accordion-button:not(.collapsed)::after {
+		  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+		}
+		.accordion-button::after {
+		  transition: all 0.5s;
+		}
+		.border-top-12 {
+			border-top-left-radius: 12px;border-top-right-radius: 12px
+		}
+		.card-title {
+			text-align: center;
+			color: #14563e;
+			font-weight: bold;
+		}
+		.card-text {
+			font-size: 0.8rem;
+			text-align: center;
+			color: #14563e;
+			padding: 15px 0;
+		}
+		.card-footer {
+			background-color: transparent;
+			border-top: none;
+			font-weight: bold;
+			padding-bottom: 1rem;
+		}
+		.nav-link {
+			text-transform: uppercase;
+		}
     </style>
 </head>
 <body>
@@ -73,23 +157,39 @@
 		                    <a class="nav-link" href="#">Home</a>
 		                </li>
 		                <li class="nav-item">
-		                    <a class="nav-link" href="#">About</a>
+		                    <a class="nav-link" href="#">About us</a>
 		                </li>
 		                <li class="nav-item">
-		                    <a class="nav-link" href="#">Services</a>
+		                    <a class="nav-link" href="#">why kayapalat</a>
 		                </li>
 		                <li class="nav-item">
-		                    <a class="nav-link" href="#">Contact</a>
+		                    <a class="nav-link" href="#">weight lose</a>
+		                </li>
+		                <li class="nav-item">
+		                    <a class="nav-link" href="#">testimonial</a>
+		                </li>
+		                <li class="nav-item">
+		                    <a class="nav-link" href="#">faq</a>
+		                </li>
+		                <li class="nav-item">
+		                    <a class="nav-link" href="#">contact us</a>
 		                </li>
 		            </ul>
 		        </div>
 		    </div>
 		</nav>
-		<img src="assets/hero.png" width="100%">
+		<img src="assets/hero.png" width="100%" style="padding-bottom: 0rem;">
 	</div>
 	
 	<!--  -->
-	<div class="container">
+	<div class="container px-5 position-absolute start-50 translate-middle">
+	    <div class="card bg-white px-5 pb-2 pt-3 text-green d-flex shadow shadow-lg" align="center" style="border-radius: 12px;border: none;">
+	        <h5>YOUR PATH TO WELLNESS STARTS HERE, WELLNESS BREAKTHROUGH MASTERCLASS <span class="ml-4"><a class="btn text-white" style="margin-left: 10px;">REGISTER NOW</a></span> </h5>
+	    </div>
+	</div>
+
+
+	<div class="container" style="padding-top: 6rem;">
 		<h1 class="text-green py-5" align="center">Lose Weight in just 3 Simple Steps</h1>
 		<img src="assets/yoga.png" width="100%">
 		<div class="py-5" align="center">
@@ -97,39 +197,238 @@
 		</div>
 	</div>
 	<!-- Trainer -->
-	<div class="bg-light-green">
+	<div class="bg-light-green py-5">
 		<div class="container">
-			<h1 class="text-green py-5" align="center">Meet Your Trainer</h1>
+			<h1 class="text-green pb-4" align="center">Meet Your Trainer</h1>
 			<div class="row">
 				<div class="col-12 col-md-4">
 					<img src="assets/Asset 9.png" width="100%">
 				</div>
 				<div class="col-12 col-md-8">
-					Ajay Sethi possess a long and distinct background in professional sports, fitness, nutrition, bodybuilding, distance running, and wellness coaching.<br/><br/>
-					An MBA from top ranking business school, he left a successful corporate career when he realized that nothing is more exciting and satisfying than helping others discover their potential by adopting healthy active lifestyles.<br/><br/>
-					“If I, as a shy, reserved boy with poor academic grades and zero sporting talent in school, can excel in both than anybody can,” says Ajay.<br/><br/>
-					He truly believes that their is potential and promise with in everyone and all you need is a right coach to help you discover it within. The right Coach is a person who has walked the way before and driven to make a difference..<br/><br/>
-					“Never seek directions from those who have never ventured beyond their own doorstep.” says Ajay<br/><br/>
-					He is a Reebok Certified Fitness Trainer, Exercise and Movement Specialist, EBFA USA, a renowned Running Coach, a REHAB Master Trainer, Motivational Speaker, and a sought-after Wellness Consultant.<br/><br/>
-					In his practice spanning over 28 years he has trained more than 35000 people and has worked extensively on community wellness projects impacting lakhs of people to adopt healthy active lifestyle. He has an uncanny ability to inspire audiences across ages and gender to pursue a lifestyle that can help them become the best possible version of themselves.<br/><br/>
-					Kayapalat Wellness an initiative that he launched at the peak of the pandemic to help people take care of themselves from the safety of their home. Which in just 40 months has reached out to people across 314+ cities and 13+ countries.<br/><br/>
-					He is relentless in his pursuit of making the world happier and healthier.
+					<div class="px-4 font-15 text-black">
+						Ajay Sethi possess a long and distinct background in professional sports, fitness, nutrition, bodybuilding, distance running, and wellness coaching.<br/><br/> An MBA from top ranking business school, he left a successful corporate career when he realized that nothing is more exciting and satisfying than helping others discover their potential by adopting healthy active lifestyles.<br/><br/> “If I, as a shy, reserved boy with poor academic grades and zero sporting talent in school, can excel in both than anybody can,” says Ajay.<br/><br/>
+						He truly believes that their is potential and promise with in everyone and all you need is a right coach to help you discover it within. The right Coach is a person who has walked the way before and driven to make a difference..<br/><br/>
+						“Never seek directions from those who have never ventured beyond their own doorstep.” says Ajay<br/><br/>
+						He is a Reebok Certified Fitness Trainer, Exercise and Movement Specialist, EBFA USA, a renowned Running Coach, a REHAB Master Trainer, Motivational Speaker, and a sought-after Wellness Consultant.<br/><br/>
+						In his practice spanning over 28 years he has trained more than 35000 people and has worked extensively on community wellness projects impacting lakhs of people to adopt healthy active lifestyle. He has an uncanny ability to inspire audiences across ages and gender to pursue a lifestyle that can help them become the best possible version of themselves.<br/><br/>
+						Kayapalat Wellness an initiative that he launched at the peak of the pandemic to help people take care of themselves from the safety of their home. Which in just 40 months has reached out to people across 314+ cities and 13+ countries.<br/><br/>
+						He is relentless in his pursuit of making the world happier and healthier.
+					</div>
 				</div>
 			</div>	
 		</div>
 	</div>
-	<!-- FAQ -->
-	<div>
-		
-	</div>
-	<!-- Contact Us -->
-	<div class="bg-light-green py-5">
-		<div class="row">
-			<div class="col-6 bg-green">
+	<!-- icons -->
+	<div class="container py-5 bg-white">
+		<h1 class="font-weight-bold text-green" align="center">Wellness Breakthrough Made Possible</h1>
+		<h4 class="text-green py-4" align="center">A simple yet revolutionary and practical approach is making wellness<br/>living possible for individuals aged 13 to 93, enabling them to take charge<br/>of their health, fitness, and well-being without stepping out of their homes.</h4>
+		<div class="container" align="center">
+			<div class="row">
+				<div class="col-md-3"><img src="assets/Asset 7.png" width="120px"></div>
+				<div class="col-md-3"><img src="assets/Asset 1.png" width="120px"></div>
+				<div class="col-md-3"><img src="assets/Asset 6.png" width="120px"></div>
+				<div class="col-md-3"><img src="assets/Asset 3.png" width="120px"></div>
 			</div>
-			<div class="col-6">
+			<div class="row">
+				<div class="col-md-3"><img src="assets/Asset 2.png" width="120px"></div>
+				<div class="col-md-3"><img src="assets/Asset 5.png" width="120px"></div>
+				<div class="col-md-3"><img src="assets/Asset 4.png" width="120px"></div>
 			</div>
 		</div>
+	</div>
+
+	<!-- Bonus Cards -->
+	<div class="container py-5">
+		<h1 class="text-green font-weight-bold" align="center">Attend the Master Class and Get Following <span class="text-warning">BONUSES</span> Worth</h1>
+		<h1 align="center" class="text-warning font-weight-bold font-inr">INR 7496 /-</h1>
+		<div class="row row-cols-1 row-cols-md-4 g-5 pt-4">
+		  <div class="col">
+		    <div class="card h-100 shadow-lg br-12 border-none">
+		      <h1 class="bg-green text-white py-4 border-top-12" align="center">BONUS 1</h1>
+		      <div class="card-body">
+		        <h5 class="card-title">Personal Wellness<br>Evaluation Workshop</h5>
+		        <p class="card-text">Get an expert evaluation through a series of tests design to identify areas where you need to focus to improve you health and fitness. A must for all anyone planning to start any health or fitness regime.</p>
+		      </div>
+		      <div class="card-footer" align="center">
+		        <div class="text-green">Free Workshop Ticket</div>
+		        <div class="text-warning">Worth Rs. 2499/-</div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col">
+		    <div class="card h-100 shadow-lg br-12 border-none">
+		      <h1 class="bg-green text-white py-4 border-top-12" align="center">BONUS 2</h1>
+		      <div class="card-body">
+		        <h5 class="card-title">Burn Belly Fat<br>While Sleeping</h5>
+		        <p class="card-text"></p>
+		      </div>
+		      <div class="card-footer" align="center">
+		        <div class="text-green">Free Workshop Class Ticket</div>
+		        <div class="text-warning">Worth Rs. 2999/-</div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col">
+		    <div class="card h-100 shadow-lg br-12 border-none">
+		      <h1 class="bg-green text-white py-4 border-top-12" align="center">BONUS 3</h1>
+		      <div class="card-body">
+		        <h5 class="card-title">Live Sneak Peek</h5>
+		        <p class="card-text">Get Insider’s View of Our Community Special Invite For a STORY OF THE WEEK</p>
+		      </div>
+		      <div class="card-footer" align="center">
+		        <div class="text-warning">Worth Rs. 999/-</div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col">
+		    <div class="card h-100 shadow-lg br-12 border-none">
+		      <h1 class="bg-green text-white py-4 border-top-12" align="center">BONUS 4</h1>
+		      <div class="card-body">
+		        <h5 class="card-title">Q&A with <br>Master Trainer<br>Ajay Sethi</h5>
+		        <p class="card-text">Get your concerns addressed immediately by a man who is an authority on the subject.</p>
+		      </div>
+		      <div class="card-footer" align="center">
+		        <div class="text-warning">Worth Rs. 999/-</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="py-5" align="center">
+			<a class="btn text-white" href="">JOIN NOIW</a>
+		</div>
+	</div>
+	<!-- Gallery -->
+	<div class="">
+		
+	</div>
+	<!-- Checkboxes -->
+	<div class="container">
+		<div class="row">
+			<div class="">
+				
+			</div>
+		</div>
+	</div>
+	<!-- Testimonials -->
+	<div class="container">
+		<div></div>
+	</div>
+	<!-- FAQ -->
+	<div class="bg-white" style="padding-bottom: 9rem;">
+		<div class="container">
+			<h1 class="text-green py-5" align="center">Frequently Asked Questions</h1>
+			<div class="accordion" id="accordionExample">
+			    <div class="accordion-item">
+			      <h2 class="accordion-header">
+			        <button class="accordion-button text-green font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			          Will I get the recording of the program?
+			        </button>
+			      </h2>
+			      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+			        <div class="accordion-body">
+			          It is a live program where Ajay will be training. No recording will be provided.
+			        </div>
+			      </div>
+			    </div>
+			    <div class="accordion-item">
+			      <h2 class="accordion-header">
+			        <button class="accordion-button collapsed text-green font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			        	How I will get access to attend the program?
+			        </button>
+			      </h2>
+			      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+			        <div class="accordion-body">
+			        	It is a live program where Ajay will be training. No recording will be provided.
+			        </div>
+			      </div>
+			    </div>
+			    <div class="accordion-item">
+			      <h2 class="accordion-header">
+			        <button class="accordion-button collapsed text-green font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			        	Can I attend this if I don’t have any health or weight issues?
+			        </button>
+			      </h2>
+			      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+			        <div class="accordion-body">
+			        	It is a live program where Ajay will be training. No recording will be provided.
+			        </div>
+			      </div>
+			    </div>
+			    <div class="accordion-item">
+			      <h2 class="accordion-header">
+			        <button class="accordion-button collapsed text-green font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+			        	Does the event happen in English or any local language?
+			        </button>
+			      </h2>
+			      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+			        <div class="accordion-body">
+			        	It is a live program where Ajay will be training. No recording will be provided.
+			        </div>
+			      </div>
+			    </div>
+			    <div class="accordion-item">
+			      <h2 class="accordion-header">
+			        <button class="accordion-button collapsed text-green font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+			        	If I miss joining this time, can I attend this again?
+			        </button>
+			      </h2>
+			      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+			        <div class="accordion-body">
+			        	It is a live program where Ajay will be training. No recording will be provided.
+			        </div>
+			      </div>
+			    </div>
+			    <div class="accordion-item">
+			      <h2 class="accordion-header">
+			        <button class="accordion-button collapsed text-green font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+			        	When will I get the bonus items?
+			        </button>
+			      </h2>
+			      <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+			        <div class="accordion-body">
+			        	It is a live program where Ajay will be training. No recording will be provided.
+			        </div>
+			      </div>
+			    </div>
+			</div>
+		</div>		
+	</div>
+	<!-- Subscribe -->
+	<div class="container px-5 position-absolute start-50 translate-middle" style="max-width: 1100px;">
+		<div class="card bg-green px-5 py-3 text-white" align="center" style="border-radius: 12px;">
+			<h3>SUBSCRIBE TO OUR NEWSLETTER FOR NEW<br/>UPDATES AND NEW WEBINARS</h3>
+			<div>
+				<input type="" name="" class="">
+				<button class="btn text-white">Subscribe</button>
+			</div>
+		</div>
+	</div>
+	<!-- Contact Us -->
+	<div class="bg-light-green py-6" style="padding-top: 10rem;">
+	    <div class="overflow-x-hidden">
+	        <div class="row">
+	            <div class="col-12 col-md-6">
+	                <div class="bg-green px-5 py-8 b-r-10">
+	                    <h1 class="text-white pb-3">Contact Us</h1>
+	                    <div class="pb-2"><a class="text-white text-decoration-none" href="mailto:kayapalat360degree@gmail.com">kayapalat360degree@gmail.com</a></div>
+	                    <div><a class="text-white text-decoration-none" href="tel:">+91 9462040300</a></div>
+	                </div>
+	            </div>
+	            <div class="col-6">
+	                <div class="bg-white p-4 shadow-md" style="position: absolute;margin-left: -100px;margin-top: 30px;border-radius: 10px;width: 32vw;">
+	                    <form>
+	                    	<h2 class="text-green font-weight-bold" style="letter-spacing: 4px;">REGISTER</h2>
+	                    	<div>	                    		
+	                    		<input type="text" class="form-control mt-3" name="name" placeholder="Name">
+	                    		<input type="number" class="form-control mt-3" name="mobile" placeholder="PHONE NO">
+	                    		<textarea class="form-control mt-3" rows="5" name="message" placeholder="MESSAGE"></textarea>
+	                    		<button class="btn w-100 text-white mt-3 text-uppercase">Submit</button>
+	                    	</div>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 	</div>
 	<!-- Footer -->
 	<footer align="center">
@@ -137,7 +436,7 @@
 	</footer>
 </section>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

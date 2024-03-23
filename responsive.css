@@ -11,6 +11,7 @@ body {
 }
 .navbar-brand img {
     height: 40px;
+    padding-left: 35px;
 }
 .bg-green {
 	background-color: #14563e;
@@ -104,9 +105,6 @@ footer img {
 	font-weight: bold;
 	padding-bottom: 1rem;
 }
-.nav-link {
-	text-transform: uppercase;
-}
 .ml-10px {
 	margin-left: 10px;
 }
@@ -117,8 +115,12 @@ footer img {
 	background-color: #fff;
 }
 .nav-link {
+	text-transform: uppercase;
 	color: #14563e;
 	font-weight: 600;
+}
+.nav-link:hover{
+	color: #ffbd4a !important;
 }
 .nav-item {
 	padding-left: 2rem;
@@ -127,7 +129,75 @@ footer img {
 .bg-hero {
 	background: #eaf3ee;
 }
+.subscribe-input {
+	padding: 9px 8px;
+    margin-right: -6px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 40%;
+    border: none;
+}
+.subscribe-btn {
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 9px 22px;
+    margin-top: -3px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #ffbd4a;
+    border: none;
+}
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 60px;
+}
 
+#quote-carousel .carousel-control {
+  background: none;
+  color: #CACACA;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+
+#quote-carousel .carousel-indicators {
+  position: relative;
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-top: 20px;
+  margin-right: -19px;
+}
+
+#quote-carousel .carousel-indicators li {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all .4s ease-in;
+  vertical-align: middle;
+}
+
+#quote-carousel .carousel-indicators .active {
+  width: 128px;
+  height: 128px;
+  opacity: 1;
+  transition: all .2s;
+}
+
+.carousel-indicators img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -206,5 +276,12 @@ footer img {
 	}
 	.mob-overflow-x-hidden {
 		overflow-x: hidden;
+	}
+	.subscribe-input {
+		padding: 5px 8px;
+	    width: 60%;
+	}
+	.subscribe-btn {
+	    padding: 10.2px 22px 6.8px 22px;
 	}
 }

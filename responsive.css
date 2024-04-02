@@ -239,7 +239,7 @@ footer img {
   transform: rotate(45deg);
 }
 .bg-landing {
-	background-image: url('../assets/Asset2012.png'); background-repeat: no-repeat; background-position: center; background-size: cover;
+	background-image: url('assets/Asset12.png'); background-repeat: no-repeat; background-position: center; background-size: cover;
 }
 
 
@@ -279,8 +279,8 @@ footer img {
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
 	}
-	.py-6{
-		padding: 6rem 0;
+	.py-9{
+		padding: 9rem 0;
 	}
 	.pad-bottom-9 {
 		padding-bottom: 9rem;

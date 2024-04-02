@@ -238,6 +238,9 @@ footer img {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
+.bg-landing {
+	background-image: url('../assets/Asset2012.png'); background-repeat: no-repeat; background-position: center; background-size: cover;
+}
 
 
 

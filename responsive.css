@@ -241,7 +241,42 @@ footer img {
 .bg-landing {
 	background-image: url('assets/Asset12.png'); background-repeat: no-repeat; background-position: center; background-size: cover;
 }
+/*#floatingCard {
+	display: none;
+}*/
+#minimizeBtn {
+	background-color: #dc3545;
+}
+#floatingButton {
+	display: none;
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 9999;
+}
 
+/* Styles for the round button */
+.round-btn {
+  width: 60px; /* Adjust the size of the button */
+  height: 60px; /* Adjust the size of the button */
+  border-radius: 50%;
+  background-color: #007bff; /* Adjust the background color */
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the shadow */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hover effect for the button */
+.round-btn:hover {
+  background-color: #0056b3; /* Adjust the hover background color */
+}
 
 
 
@@ -256,6 +291,9 @@ footer img {
 	.font-inr {
 		font-size: 5rem;
 	}
+	/*#floatingCard {
+		display: block;
+	}*/
 	.desktop-pt-6 {
 		padding-top: 6rem;
 	}

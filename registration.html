@@ -66,7 +66,7 @@
 	                    		<input type="email" class="form-control mt-3" name="Email" placeholder="Email" required>
 	                    		<input type="number" class="form-control mt-3" name="Mobile" placeholder="PHONE NO" required>
 	                    		<input type="text" class="form-control mt-3" name="Location" placeholder="Location" required>
-	                    		<button  type="submit" class="btn w-100 text-white mt-3 text-uppercase">Submit</button>
+	                    		<button  type="submit" class="btn w-100 text-white mt-3 text-uppercase">Pay Now</button>
 	                    	</div>
 	                    </form>
 					</div>
@@ -84,7 +84,7 @@
 		<h1 class="text-green py-md-5 pt-3 pb-0" align="center">Lose Weight in just 3 Simple Steps</h1>
 		<img src="assets/yoga.png" width="100%">
 		<div class="py-5" align="center">
-			<a class="btn text-white mob-font-12">JOIN OUR WELLNESS PROGRAME</a>
+			<a class="btn text-white mob-font-12" href="https://cosmofeed.com/vp/659bb8ab4c5f95001e321b8c">JOIN OUR WELLNESS PROGRAME</a>
 		</div>
 	</div>
 	<!-- Trainer -->
@@ -248,7 +248,7 @@
 	        </div>
 	    </div>
 	    <div class="py-5" align="center">
-	        <a class="btn text-white" href="">JOIN NOW</a>
+	        <a class="btn text-white" href="https://cosmofeed.com/vp/659bb8ab4c5f95001e321b8c">JOIN NOW</a>
 	    </div>
 	</div>
 	<!-- Gallery -->
@@ -494,7 +494,7 @@
 <!-- Floating button -->
 <section class="fixed-bottom d-block d-md-none">
 	<div class="bg-green w-100 py-2 px-3">
-		<a href="#contact-us" class="btn btn-success w-100">Register Now</a>
+		<a href="https://cosmofeed.com/vp/659bb8ab4c5f95001e321b8c" class="btn btn-success w-100">Register Now</a>
 	</div>
 </section>
 <!-- Floating card -->
@@ -540,7 +540,8 @@
 	    })
 	    .then(response => {
 	        if (response.ok) {
-	            alert('Your Query submitted successfully!');
+	            var redirectUrl = 'https://cosmofeed.com/vp/659bb8ab4c5f95001e321b8c';
+    			window.location.href = redirectUrl;
 	            sendEventToGoogleAnalytics('form_submission');
 	            this.reset(); // Reset the form
 	        } else {

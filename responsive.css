@@ -329,6 +329,9 @@ footer img {
 
 /*Mobile Only Media Query*/
 @media screen and (max-width: 900px) {
+	.mobile-none {
+		display: none !important;
+	}
 	.font-inr {
 		font-size: 3rem;
 	}

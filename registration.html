@@ -44,10 +44,8 @@
 	        }
 	    }
     </script>
-
     <script>
 	    function triggerFacebookPixel() {
-	    	console.log("pixel code triggering");
 	        fbq('track', 'PageView');
 	    }
 	</script>
@@ -57,7 +55,7 @@
 <section>
 	<!-- alert bar -->
 	<div class="alert bg-warning alert-non-dismissible fade show mb-0 font-weight-bold fixed-top border-none" role="alert" align="center">
-	    <a class="text-green text-decoration-none" href="#contact-us">Click here to Start your fitness journey Now! Join the Kayapalat webinar just in Rs 47/-</a>
+	    <a class="text-green text-decoration-none" href="https://cosmofeed.com/vp/657ed3ccf42d8d001d46ea8a">Click here to Start your fitness journey Now! Join the Kayapalat webinar just in Rs 47/-</a>
 	</div>
 	<!-- navbar -->
 	<!-- <div class="py-5 bg-landing">
@@ -82,17 +80,17 @@
 		</div>
 	</div>	 -->
 	<!--  -->
-	<img src="assets/Asset12.png" class="pb-0" width="100%">
+	<img src="assets/Asset12.png" class="pb-0 mobile-pt-15per" width="100%">
 	<div class="d-none d-md-block container px-md-5 position-absolute start-50 translate-middle">
 	    <div class="card bg-white px-5 pb-2 pt-3 text-green d-flex shadow shadow-lg border-none br-12" align="center">
-	        <h5 class="mob-font-10">YOUR PATH TO WELLNESS STARTS HERE, WELLNESS BREAKTHROUGH MASTERCLASS <span class="ml-4"><a href="#contact-us" class="btn text-white mob-font-10 mt-md-0 mt-2 ml-10px">REGISTER NOW</a></span> </h5>
+	        <h5 class="mob-font-10">YOUR PATH TO WELLNESS STARTS HERE, WELLNESS BREAKTHROUGH MASTERCLASS <span class="ml-4"><a href="https://cosmofeed.com/vp/657ed3ccf42d8d001d46ea8a" class="btn text-white mob-font-10 mt-md-0 mt-2 ml-10px">REGISTER NOW</a></span> </h5>
 	    </div>
 	</div>
-	<div class="container desktop-pt-6">
+	<div class="container pt-5">
 		<h1 class="text-green py-md-5 pt-3 pb-0" align="center">Lose Weight in just 3 Simple Steps</h1>
 		<img src="assets/yoga.png" width="100%">
 		<div class="py-5" align="center">
-			<a class="btn text-white mob-font-12" href="https://cosmofeed.com/vp/659bb8ab4c5f95001e321b8c">JOIN OUR WELLNESS PROGRAME</a>
+			<a class="btn text-white mob-font-12" href="https://cosmofeed.com/vp/657ed3ccf42d8d001d46ea8a">JOIN OUR WELLNESS PROGRAME</a>
 		</div>
 	</div>
 	<!-- Trainer -->
@@ -147,7 +145,7 @@
 					<li class="pt-4">Serves people of all abilities and ages.</li>
 				</ul>
 				<div class="pt-5" align="center">
-					<a href="#contact-us" class="btn btn-warning text-white mob-font-12 w-50">REGISTER NOW</a>
+					<a href="https://cosmofeed.com/vp/657ed3ccf42d8d001d46ea8a" class="btn btn-warning text-white mob-font-12 w-50">REGISTER NOW</a>
 				</div>
 			</div>
 			<div class="col-md-5 col-12">
@@ -256,7 +254,7 @@
 	        </div>
 	    </div>
 	    <div class="py-5" align="center">
-	        <a class="btn text-white" href="#contact-us">JOIN NOW</a>
+	        <a class="btn text-white" href="https://cosmofeed.com/vp/657ed3ccf42d8d001d46ea8a">JOIN NOW</a>
 	    </div>
 	</div>
 	<!-- Gallery -->
@@ -486,7 +484,7 @@
 	                    		<input type="email" class="form-control mt-3" name="Email" placeholder="Email" required>
 	                    		<input type="number" class="form-control mt-3" name="Mobile" placeholder="PHONE NO" required>
 	                    		<input type="text" class="form-control mt-3" name="Location" placeholder="Location" required>
-	                    		<button  type="submit" class="btn w-100 text-white mt-3 text-uppercase" onclick="triggerFacebookPixel();">Pay Now</button>
+	                    		<button  type="submit" class="btn w-100 text-white mt-3 text-uppercase" onclick="triggerFacebookPixel();">Register at ₹ 47/-</button>
 	                    	</div>
 	                    </form>
 	                </div>
@@ -501,13 +499,13 @@
 </section>
 <!-- Floating button -->
 <section class="fixed-bottom d-block d-md-none">
-	<div class="bg-green w-100 py-2 px-3">
-		<a href="#contact-us" class="btn btn-success w-100" onclick="triggerFacebookPixel();">Register Now</a>
+	<div class="bg-green w-100 py-2 px-3 register-btn">
+		<a href="https://cosmofeed.com/vp/657ed3ccf42d8d001d46ea8a" class="btn btn-success w-100" onclick="triggerFacebookPixel2();">Register at ₹ 47/-</a>
 	</div>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <!-- <script type="text/javascript" src="script.js"></script> -->
 <script>
@@ -535,7 +533,7 @@
 	    })
 	    .then(response => {
 	        if (response.ok) {
-	            var redirectUrl = 'https://cosmofeed.com/vp/659bb8ab4c5f95001e321b8c';
+	            var redirectUrl = 'https://cosmofeed.com/vp/657ed3ccf42d8d001d46ea8a';
     			window.location.href = redirectUrl;
 	            sendEventToGoogleAnalytics('form_submission');
 	            this.reset(); // Reset the form
@@ -547,6 +545,26 @@
 	        console.error('Error:', error);
 	        alert('Failed to submit form. Please try again later.');
 	    });
+	});
+</script>
+<script>
+    function triggerFacebookPixel2() {
+        fbq('track', 'PageView');
+    }
+
+	var lastScrollTop = 0;
+
+	$(window).scroll(function() {
+	   var st = $(this).scrollTop();
+	   var contactUsOffset = $('#faq').offset().top;
+	   
+	   if (st > contactUsOffset) {
+	      $('.register-btn').hide(500);
+	   } else {
+	      $('.register-btn').show(500);
+	   }
+	   
+	   lastScrollTop = st;
 	});
 </script>
 </body>

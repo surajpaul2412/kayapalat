@@ -332,6 +332,9 @@ footer img {
 	.mobile-none {
 		display: none !important;
 	}
+	.mobile-pt-15per {
+		padding-top: 15%;
+	}
 	.font-inr {
 		font-size: 3rem;
 	}
